@@ -1,0 +1,27 @@
+package br.com.crud.backend.controller;
+
+import java.io.Serializable;
+import java.util.List;
+import java.util.stream.Collectors;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.ResponseEntity;
+import org.springframework.stereotype.Service;
+
+import br.com.crud.backend.dto.AlunoDTO;
+import br.com.crud.backend.entities.Aluno;
+import br.com.crud.backend.repository.AlunoRepository;
+
+@Service
+public class AlunoService implements Serializable {
+	private static final long serialVersionUID = 1L;
+
+	@Autowired
+	public AlunoService alunoService;
+
+	public ResponseEntity<List<AlunoDTO>> findAll (){
+		List<ProductDTO> list = alunoService.findAll();
+		return ResponseEntity.ok().body(list);
+
+	
+}

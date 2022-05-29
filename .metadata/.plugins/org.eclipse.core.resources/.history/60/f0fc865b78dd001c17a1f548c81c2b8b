@@ -1,0 +1,11 @@
+package br.com.crud.backend.dto;
+
+import javax.persistence.Column;
+
+public class AlunoDTO {
+
+	private Long id;
+	private String name;
+	private String cpf;
+
+}
