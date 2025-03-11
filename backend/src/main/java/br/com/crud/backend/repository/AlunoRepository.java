@@ -5,7 +5,7 @@ import org.springframework.stereotype.Repository;
 
 import br.com.crud.backend.entities.Aluno;
 
-@Repository
+
 public interface AlunoRepository extends JpaRepository<Aluno, Long> {
 
 }
